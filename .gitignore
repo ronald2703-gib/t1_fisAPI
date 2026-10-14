@@ -1,0 +1,11 @@
+
+# Entorno virtual
+.venv/
+
+# Variables de entorno (¡Muy importante para proteger contraseñas/claves!)
+.env
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+.pytest_cache/

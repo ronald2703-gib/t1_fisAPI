@@ -1,19 +1,21 @@
 from typing import Optional
 from pydantic import BaseModel, EmailStr
 
-class trainee(BaseModel):
-    document:str
-    name:str
-    firstname:str
+class TraineeModel(BaseModel):
+    document: str
+    name: str
+    firstname: str
     email: EmailStr
-    age:int
-    program:str
-    record_number:int
+    age: int
+    program: str
+    record_number: int
 
 class TraineeUpdateModel(BaseModel):
-    firstname:Optional[str]= None
-    lastname:Optional[str]= None
-    email:Optional[EmailStr]= None
-    age:Optional[int]= None
-    program:Optional[str]= None
-    record_number:Optional[int]= None
+    document: Optional[str] = None
+    name: Optional[str] = None
+    firstname: Optional[str] = None
+    lastname: Optional[str] = None
+    email: Optional[EmailStr] = None
+    age: Optional[int] = None
+    program: Optional[str] = None
+    record_number: Optional[int] = None
